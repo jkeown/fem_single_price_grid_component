@@ -80,6 +80,10 @@ button{
   box-shadow: var(--box-shadow);
   margin-top: 1.5rem;
 }
+button:hover{
+  background: white;
+  color: var(--bright-yellow);
+}
 .about{
   background: var(--cyan);
   opacity: 0.75;
