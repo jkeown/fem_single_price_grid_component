@@ -15,6 +15,7 @@ html,body{
   height: 100%;
 }
 body{
+  color: var(--light-gray);
   font-size: 16px;
   font-family: 'Karla', sans-serif;
   display: flex;
@@ -25,10 +26,8 @@ body{
   line-height: 1.5;
 }
 .container{
-  display: flex;
-  flex-direction: column;
-  flex: 1;
   width: 90vw;
+  max-width: 680px;
   border-radius: 10px;
   box-shadow: var(--box-shadow);
 }
@@ -36,7 +35,8 @@ section{
   padding: 20px;
 }
 footer{
-  margin-top: 20px;
+  margin-top: 100px;
+  color: var(--grayish-blue);
 }
 
 .cta h1{
@@ -56,10 +56,62 @@ footer{
 .subscription{
   background: var(--cyan);
 }
+.price{
+  color: var(--light-gray);
+  font-weight: 700;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+small{
+  font-size: .9rem;
+  margin-left: 10px;
+  opacity: 0.6;
+}
+button{
+  background: var(--bright-yellow);
+  color: inherit;
+  border: none;
+  width: 100%;
+  padding: 0.9rem;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  box-shadow: var(--box-shadow);
+  margin-top: 1.5rem;
+}
 .about{
   background: var(--cyan);
   opacity: 0.75;
+  border-radius: 0 0 10px 10px;
 }
 .section-title{
   color: var(--light-gray);
+  margin-bottom: .5rem;
 }
+li{
+  list-style: none;
+  opacity: .7;
+}
+
+@media(min-width: 550px){
+  .cta{
+    padding: 2rem;
+  }
+  .flex-section{
+    display: flex;
+  }
+  .flex-section section{
+    width: 100%;
+    padding: 2rem;
+  }
+  .subscription{
+    border-bottom-left-radius: 5px;
+  }
+  .about{
+    border-radius: 0 0 5px 0;
+  }
+}
+
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
